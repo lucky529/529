@@ -2,18 +2,19 @@
 #include"txl.h"
 void menu()
 {
-	printf("***********************\n");
-	printf("****1.add    2.del ****\n");
-	printf("****3.search 4.xui ****\n");
-	printf("****5.show   6.empty***\n");
-	printf("****7.sort   0.exit****\n");
-	printf("***********************\n");
+	printf("***************************\n");
+	printf("**** 1.add    2.del    ****\n");
+	printf("**** 3.search 4.modify ****\n");
+	printf("**** 5.show   6.empty  ****\n");
+	printf("**** 7.sort   0.exit   ****\n");
+	printf("***************************\n");
 }
 int main()
 {
+	int len = 0;
 	int input = 0;
-	contact con;
-	Initcontact(&con);
+	contact con;	
+	Initcontact(&con);	
 	do
 	{
 		menu();
@@ -28,17 +29,24 @@ int main()
 			delcontact(&con);
 			break;
 		case SEARCH:
+			searchcontact(&con);
 			break;
-		case XUI:
+		case MODIFY:
+			xuicontact(&con);
 			break;
 		case SHOW:
 			showcontact(&con);
 			break;			
 		case EMPTY:
+			emptycontct(&con);
 			break;
 		case SORT:
+			sortcontact(&con);
 			break;
 		case EXIT:
+			savecontact(&con);
+			printf("保存成功\n");
+			destorycontact(&con);
 			printf("程序退出\n");
 			break;
 		default:
