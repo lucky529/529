@@ -3,53 +3,53 @@
 //方法一（横向比较）
 
 
-//char* longestCommonPrefix(char** strs, int strsSize)
-//{     
-//    if(strsSize == 0) return"";
-//    if(strsSize == 1) return strs[0]; 
-//    int i = 0;
-//    int index = 0; 
-//    
-//    for(i = 1; i < strsSize; i++)
-//    {
-//        for(index = 0; index < strlen(strs[0]) ; index++)
-//        {
-//            if(strs[0][index] != strs[i][index])
-//            { 
-//                strs[0][index] = '\0';
-//            break;
-//            }
-//               
-//        }
-//    }
-//    return strs[0];
-//    
-//}
-//char* longestCommonPrefix(char** strs, int strsSize)
-//{     
-//    if(strsSize == 0) return"";
-//    if(strsSize == 1) return strs[0]; 
-//	int i = 0;
-//	int m = 0;
-//	int index = 0;
-//	char* ret = (char*)malloc(strlen(strs[0])*sizeof(char));
-//	for(index = 0; index < strlen(strs[0]); index ++)
-//	{
-//		for(i = 0; i < strsSize; i++)
-//		{
-//			if(strs[0][index] != strs[i][index])
-//			{
-//				ret[m] = '\0';
-//				return ret;
-//			}
-//		}
-//		ret[m] = strs[0][index];
-//		m++;
-//	}
-//	ret[m] = '\0';
-//	return ret; 
-//    
-//}
+char* longestCommonPrefix(char** strs, int strsSize)
+{     
+    if(strsSize == 0) return"";
+    if(strsSize == 1) return strs[0]; 
+    int i = 0;
+    int index = 0; 
+    
+    for(i = 1; i < strsSize; i++)
+    {
+        for(index = 0; index < strlen(strs[0]) ; index++)
+        {
+            if(strs[0][index] != strs[i][index])
+            { 
+                strs[0][index] = '\0';
+            break;
+            }
+               
+        }
+    }
+    return strs[0];
+    
+}
+char* longestCommonPrefix(char** strs, int strsSize)
+{     
+    if(strsSize == 0) return"";
+    if(strsSize == 1) return strs[0]; 
+	int i = 0;
+	int m = 0;
+	int index = 0;
+	char* ret = (char*)malloc(strlen(strs[0])*sizeof(char));
+	for(index = 0; index < strlen(strs[0]); index ++)
+	{
+		for(i = 0; i < strsSize; i++)
+		{
+			if(strs[0][index] != strs[i][index])
+			{
+				ret[m] = '\0';
+				return ret;
+			}
+		}
+		ret[m] = strs[0][index];
+		m++;
+	}
+	ret[m] = '\0';
+	return ret; 
+    
+}
 
 //bool isValid(char* s)
 //{
