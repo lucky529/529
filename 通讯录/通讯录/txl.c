@@ -247,15 +247,15 @@ void xuicontact(contact* pcon)
 	else
 	{		
 		printf("请输入名字\n");
-		scanf("%s",pcon -> data[pcon -> sz+pos-1].name);
+		scanf("%s",pcon -> data[pos].name);
 		printf("请输入性别\n");
-		scanf("%s",pcon -> data[pcon -> sz+pos-1].sex);
+		scanf("%s",pcon -> data[pos].sex);
 		printf("请输入年龄\n");
-		scanf("%d",&(pcon -> data[pcon -> sz+pos-1].age));
+		scanf("%d",&(pcon -> data[pos].age));
 		printf("请输入电话\n");
-		scanf("%s",pcon -> data[pcon -> sz+pos-1].num);
+		scanf("%s",pcon -> data[pos].num);
 		printf("请输入住址\n");
-		scanf("%s",pcon -> data[pcon -> sz+pos-1].address);		
+		scanf("%s",pcon -> data[pos].address);		
 	}
 }
 
