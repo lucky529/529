@@ -7,6 +7,8 @@ int main()
 	SListInit(&list);
 	SListDestory(&list);
 	SListPushFront(&list,1);
+	SListPushFront(&list,1);
+	SListPushFront(&list,1);
 	SListPushFront(&list,2);
 	SListPushFront(&list,3);
 	SListPopFront(&list);
@@ -16,6 +18,7 @@ int main()
     SListInsertAfter(pos , 4);
 	SListInsertFront(&list, pos , 6);
 	SListEraseAfter(&list,pos);
+	SListRemove(&list,1);
 	SListPrint(&list);
 	return 0;
 }

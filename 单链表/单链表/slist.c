@@ -136,3 +136,46 @@ void SListEraseAfter(SList* plist,ListNode* pos)
 	free(pos);
 	pos ->_next = NULL;
 }
+
+void SListRemove(SList* plist, SLTDataType x)
+{
+	
+    ListNode* cur = NULL;
+    ListNode* del = NULL;
+    ListNode* front = NULL;
+    assert(plist);
+    if (plist->_head  == NULL)
+    {
+        printf("此链表为空链表\n");
+        return;
+    }
+    cur = plist ->_head;
+    front = cur;
+    while (cur != NULL)
+    {
+
+        if (cur->_data == x)
+        {
+            if (cur == plist ->_head )    //考虑第一个节点的情况
+            {
+                del = cur;
+                front = cur->_next;          //记得要移动front
+                plist ->_head = cur->_next;
+                free(del);
+            }
+            else                        //删除非第一个节点
+            {
+                del = cur;
+                front->_next  = cur->_next;
+                free(del);
+            }
+            cur = front;            //让cur移动到当前的front进行操作
+
+        }
+        else
+        {
+            front = cur;
+            cur = cur->_next ;
+        }
+    }    
+}

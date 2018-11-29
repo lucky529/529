@@ -29,5 +29,6 @@ ListNode* FindNode(SList* plist,SLTDataType x);
 void SListInsertAfter(ListNode* pos, SLTDataType x);
 void SListInsertFront(SList* plist,ListNode* pos, SLTDataType x);
 void SListEraseAfter(SList* plist,ListNode* pos);
+void SListRemove(SList* plist, SLTDataType x);
 
 
