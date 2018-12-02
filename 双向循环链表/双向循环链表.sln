@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "双向循环链表", "双向循环链表\双向循环链表.vcproj", "{67395359-42E7-4C7D-98E2-C7C02FB05D43}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67395359-42E7-4C7D-98E2-C7C02FB05D43}.Debug|Win32.ActiveCfg = Debug|Win32
+		{67395359-42E7-4C7D-98E2-C7C02FB05D43}.Debug|Win32.Build.0 = Debug|Win32
+		{67395359-42E7-4C7D-98E2-C7C02FB05D43}.Release|Win32.ActiveCfg = Release|Win32
+		{67395359-42E7-4C7D-98E2-C7C02FB05D43}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
