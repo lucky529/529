@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "堆的实现", "堆的实现\堆的实现.vcproj", "{937D9453-B32D-4547-AC34-1A3C86B67C33}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{937D9453-B32D-4547-AC34-1A3C86B67C33}.Debug|Win32.ActiveCfg = Debug|Win32
+		{937D9453-B32D-4547-AC34-1A3C86B67C33}.Debug|Win32.Build.0 = Debug|Win32
+		{937D9453-B32D-4547-AC34-1A3C86B67C33}.Release|Win32.ActiveCfg = Release|Win32
+		{937D9453-B32D-4547-AC34-1A3C86B67C33}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
