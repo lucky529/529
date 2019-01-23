@@ -1,23 +1,39 @@
-int** generate(int numRows, int** columnSizes) {
-	int i = 0;
-	//开辟存放杨辉三角的二维数组
-	int **arr = (int **)calloc(numRows, sizeof(int*));
-	for (i = 0; i<numRows; i++)
+#include<stdio.h>
+#include<windows.h>
+void my_reverse(char* pb, char* pe)
+{
+	while (pb < pe)
 	{
-		arr[i] = (int*)calloc((i + 1), sizeof(int));
+		char t = *pb;
+		*pb = *pe;
+		*pe = t;
+		pb++;
+		pe--;
 	}
-	*columnSizes = (int*)calloc(numRows, sizeof(int));
-	for (i = 0; i<numRows; i++)
+}
+char* reverseWords(char* s) {
+	char* start = s;
+	char* cur = s;
+	while (*cur)
 	{
-		int j = 0;
-		columnSizes[0][i] = i;
-		for (j = 0; j <= i; j++)
+		start = cur;
+		while ((*cur != ' ')&& (*cur != '\0'))
 		{
-			if (i == j || j == 0)
-				arr[i][j] = 1;
-			else if (i>1 && j>0)
-				arr[i][j] = arr[i - 1][j - 1] + arr[i - 1][j];
+			++cur;
+		}
+		my_reverse(start, cur - 1);
+		if (*cur == ' ')
+		{
+			++cur;
 		}
 	}
-	return arr;
+	return s;
+}
+
+int main()
+{
+	char arr[] = "hello world";
+	reverseWords(arr);
+	system("pause");
+	return 0;
 }
