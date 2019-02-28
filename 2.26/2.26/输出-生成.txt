@@ -1,0 +1,21 @@
+﻿1>------ 已启动生成:  项目: 2.26, 配置: Debug Win32 ------
+1>  test.c
+1>e:\博客代码\529\2.26\2.26\test.c(26): warning C4133: “初始化”: 从“ListNode *”到“ListNode *”的类型不兼容
+1>e:\博客代码\529\2.26\2.26\test.c(32): warning C4133: “=”: 从“ListNode *”到“ListNode *”的类型不兼容
+1>e:\博客代码\529\2.26\2.26\test.c(38): warning C4133: “初始化”: 从“ListNode *”到“ListNode *”的类型不兼容
+1>e:\博客代码\529\2.26\2.26\test.c(44): warning C4133: “=”: 从“ListNode *”到“ListNode *”的类型不兼容
+1>e:\博客代码\529\2.26\2.26\test.c(61): warning C4133: “=”: 从“ListNode *”到“ListNode *”的类型不兼容
+1>e:\博客代码\529\2.26\2.26\test.c(66): warning C4133: “初始化”: 从“ListNode *”到“ListNode *”的类型不兼容
+1>e:\博客代码\529\2.26\2.26\test.c(70): warning C4133: “=”: 从“ListNode *”到“ListNode *”的类型不兼容
+1>e:\博客代码\529\2.26\2.26\test.c(76): warning C4133: “=”: 从“ListNode *”到“ListNode *”的类型不兼容
+1>e:\博客代码\529\2.26\2.26\test.c(78): warning C4133: “=”: 从“ListNode *”到“ListNode *”的类型不兼容
+1>e:\博客代码\529\2.26\2.26\test.c(83): warning C4133: “初始化”: 从“ListNode *”到“ListNode *”的类型不兼容
+1>e:\博客代码\529\2.26\2.26\test.c(99): warning C4133: “=”: 从“ListNode *”到“ListNode *”的类型不兼容
+1>e:\博客代码\529\2.26\2.26\test.c(102): warning C4133: “=”: 从“ListNode *”到“ListNode *”的类型不兼容
+1>e:\博客代码\529\2.26\2.26\test.c(111): warning C4133: “初始化”: 从“ListNode *”到“ListNode *”的类型不兼容
+1>e:\博客代码\529\2.26\2.26\test.c(121): warning C4133: “=”: 从“ListNode *”到“ListNode *”的类型不兼容
+1>e:\博客代码\529\2.26\2.26\test.c(123): warning C4133: “=”: 从“ListNode *”到“ListNode *”的类型不兼容
+1>e:\博客代码\529\2.26\2.26\test.c(145): warning C4133: “初始化”: 从“ListNode *”到“ListNode *”的类型不兼容
+1>e:\博客代码\529\2.26\2.26\test.c(149): warning C4133: “=”: 从“ListNode *”到“ListNode *”的类型不兼容
+1>  2.26.vcxproj -> E:\博客代码\529\2.26\Debug\2.26.exe
+========== 生成:  成功 1 个，失败 0 个，最新 0 个，跳过 0 个 ==========
