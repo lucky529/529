@@ -1,23 +1,16 @@
 #include<iostream>
 #include<windows.h>
+#include<string>
 using namespace std;
-class Sample{
-public:
-	Sample(int x){
-		p = new int(x);
-	}
-	~Sample(){
-		if (p) delete p;
-	}
-	int show(){
-		return *p;
-	}
-private:
-	int*p;
-};
+
+
 int main(){
-	Sample S(5);
-	cout << S.show() << endl;
+	
+	string s;
+	s = "abcd12345ed125ss123456789";
+	string ret(s.begin() + 16, s.begin() + 25);
+	cout << ret << endl;
+	
 	system("pause");
 	return 0;
-}
+}
