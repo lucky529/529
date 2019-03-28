@@ -432,7 +432,7 @@ using namespace std;
 
 int main()
 {
-	vector<int> v;
+	/*vector<int> v;
 	for (int i = 1; i <= 7; i++)
 	{
 		v.push_back(i);
@@ -444,25 +444,27 @@ int main()
 	{
 		cout << e << endl;
 	}
-	system("pause");
+	system("pause");*/
+	unsigned int a = -1;
+
 	return 0;
 }
 
-int len = pre.size();
-if (len == 0) return nullptr;
-TreeNode* node = new TreeNode(pre[0]);
-if (len == 1) return node;
-
-int L = 0;
-for (int i = 0; i < len; i++)
-{
-	if (post[i] == pre[1])
-	{
-		L = i + 1;
-	}
-}
-
-
-node->left = constructFromPrePost(v1, v2);
-node->right = constructFromPrePost(v3, v4);
-return node;
+//int len = pre.size();
+//if (len == 0) return nullptr;
+//TreeNode* node = new TreeNode(pre[0]);
+//if (len == 1) return node;
+//
+//int L = 0;
+//for (int i = 0; i < len; i++)
+//{
+//	if (post[i] == pre[1])
+//	{
+//		L = i + 1;
+//	}
+//}
+//
+//
+//node->left = constructFromPrePost(v1, v2);
+//node->right = constructFromPrePost(v3, v4);
+//return node;
